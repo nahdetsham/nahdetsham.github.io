@@ -1,0 +1,10 @@
+/node_modules
+/.next/
+/out/
+/_work/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+.DS_Store
+npm-debug.log*
+.claude/

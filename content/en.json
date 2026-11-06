@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "title": "Nahdet Sham | Software · AI · Training",
+    "description": "A software and AI company from Syria. Programming and AI courses from zero to pro, built on real projects, and websites, apps and smart solutions built for you.",
+    "name": "Nahdet Sham"
+  },
+  "nav": {
+    "services": "Services",
+    "courses": "Courses",
+    "work": "Our work",
+    "about": "About",
+    "contact": "Contact",
+    "lang": "العربية",
+    "langLabel": "التبديل إلى العربية",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content",
+    "home": "Nahdet Sham home page"
+  },
+  "hero": {
+    "kicker": "Nahdet Sham",
+    "title1": "Your idea…",
+    "title2": "becomes a",
+    "titleGold": "product",
+    "pillars": "Software · AI · Training",
+    "lead": "Programming and AI courses from zero to pro, built on real projects, and websites, apps and smart solutions built for you.",
+    "ctaCourse": "Join a course",
+    "ctaProject": "Tell us about your project",
+    "scroll": "Discover our story"
+  },
+  "story": {
+    "kicker": "Our story",
+    "lines": [
+      "From Damascus… many stories began",
+      "Today… our story is code",
+      "From a team… to a company"
+    ],
+    "sub": "The Nahdet Sham team is now Nahdet Sham, a company: the same spirit, a bigger ambition. And more is coming.",
+    "code": "const nahdetSham = {\n  from: \"Damascus\",\n  was: \"a team\",\n  now: \"a company\",\n  we: [\"teach\", \"build\", \"grow\"],\n};\n\nnahdetSham.start(\"your idea\");",
+    "file": "nahdet-sham.js"
+  },
+  "pillars": {
+    "kicker": "What we do",
+    "title": "We teach · We build · We design",
+    "more": "All services",
+    "items": [
+      {
+        "id": "teach",
+        "title": "We teach",
+        "text": "Programming and AI courses from zero to pro, each with real projects that go straight into your portfolio.",
+        "points": [
+          "Python",
+          "Front-End & React",
+          "Back-End with Node.js",
+          "Machine Learning & Deep Learning",
+          "Excel & Power BI"
+        ]
+      },
+      {
+        "id": "build",
+        "title": "We build",
+        "text": "Websites, apps and AI solutions that turn your idea into a working product in people's hands.",
+        "points": [
+          "Websites for people and companies",
+          "Mobile and web apps",
+          "AI solutions"
+        ]
+      },
+      {
+        "id": "design",
+        "title": "We design",
+        "text": "Identity and content that introduce you and your work, from a first poster to a full social media plan.",
+        "points": [
+          "Social media ads",
+          "CVs",
+          "Posters and post series",
+          "Promo videos and trailers",
+          "PDF course notes",
+          "Account review and content plan"
+        ]
+      }
+    ]
+  },
+  "courses": {
+    "kicker": "Courses",
+    "title": "From zero… to pro",
+    "intro": "Five courses. Each one starts from the basics and ends with real projects. Pick your path.",
+    "labels": {
+      "modules": "What you learn",
+      "projects": "Real projects",
+      "prereq": "Prerequisites",
+      "outcome": "By the end",
+      "register": "Join the course",
+      "ask": "Ask on WhatsApp",
+      "askText": "Hello Nahdet Sham, I have a question about a course",
+      "film": "Course film",
+      "trainer": "Trainer",
+      "trainerName": "Eng. Hamza Haj Esteifi",
+      "details": "Course details"
+    },
+    "items": {
+      "python": {
+        "title": "Python: From Zero to Pro",
+        "short": "Python",
+        "level": "Zero to pro",
+        "hook": "Levels 1 and 2, graphical interfaces, databases and real projects",
+        "modules": [
+          "Programming fundamentals in depth, from your first line of code",
+          "Object-oriented programming (OOP), the way companies do it",
+          "Desktop apps with graphical interfaces (GUI)",
+          "SQL databases connected to your programs",
+          "Automating tasks and working with files",
+          "Real projects for your portfolio"
+        ],
+        "projects": [
+          "Library management system with a GUI and a database",
+          "Student management app",
+          "Interactive game"
+        ],
+        "prereq": "No prior experience needed",
+        "outcome": "You build complete programs with a graphical interface and a database"
+      },
+      "frontend": {
+        "title": "Front-End & React: From Zero to Pro",
+        "short": "Front-End & React",
+        "level": "Zero to pro",
+        "hook": "Design and build real websites and React apps, all the way to launch",
+        "modules": [
+          "Professional websites with HTML5 and CSS3",
+          "Responsive design for every screen",
+          "Modern JavaScript (ES6+) from scratch",
+          "Interactive sites connected to real APIs",
+          "React: components, Hooks and state",
+          "Git and GitHub, and publishing your site"
+        ],
+        "projects": [
+          "Responsive personal portfolio",
+          "React store with a shopping cart",
+          "Weather app using an API"
+        ],
+        "prereq": "No prior experience needed",
+        "outcome": "You build responsive websites and React apps and publish them online"
+      },
+      "backend": {
+        "title": "Back-End with Node.js & Express",
+        "short": "Back-End",
+        "level": "Basics to pro",
+        "hook": "Build the server that runs apps from the inside",
+        "modules": [
+          "Strong servers with Node.js and Express",
+          "REST APIs designed to company standards",
+          "MongoDB and SQL databases",
+          "Login, permissions and JWT security",
+          "Professional testing with Postman",
+          "Deploy your server and run it online"
+        ],
+        "projects": [
+          "API for an online store",
+          "Login and permissions system",
+          "Blog back end"
+        ],
+        "prereq": "Basic JavaScript",
+        "outcome": "You build a real API connected to a database and deploy it"
+      },
+      "ai": {
+        "title": "Machine Learning & Deep Learning",
+        "short": "ML & DL",
+        "level": "Basics to pro",
+        "hook": "Teach the computer to learn from data",
+        "modules": [
+          "Analyse data and uncover its patterns with Pandas",
+          "Machine learning algorithms, from idea to application",
+          "Neural networks and deep learning",
+          "Computer vision: image classification with CNNs",
+          "Text processing and sentiment analysis (NLP)",
+          "AI models with TensorFlow and PyTorch"
+        ],
+        "projects": [
+          "House price prediction",
+          "Image classification with a CNN",
+          "Sentiment analysis of text"
+        ],
+        "prereq": "Good knowledge of Python",
+        "outcome": "You train machine learning and deep learning models and evaluate their results"
+      },
+      "excel": {
+        "title": "Excel, Power Pivot & Power BI: From Zero to Pro",
+        "short": "Excel & Power BI",
+        "level": "Zero to pro",
+        "hook": "Turn numbers into decisions",
+        "modules": [
+          "Master Excel from the first cell",
+          "Powerful formulas: XLOOKUP and IF",
+          "Pivot Tables and data cleaning with Power Query",
+          "Data models and relationships with Power Pivot",
+          "Interactive dashboards that impress management",
+          "Power BI and DAX for professional reports"
+        ],
+        "projects": [
+          "Interactive sales dashboard",
+          "HR report",
+          "Financial data analysis"
+        ],
+        "prereq": "No prior experience needed",
+        "outcome": "You analyse real data and build interactive dashboards"
+      }
+    }
+  },
+  "work": {
+    "kicker": "Our work",
+    "title": "SHAM UNITY",
+    "text": "A university app built by our team: posts, chats, notifications, a library and a profile for every student. Scroll on to see each part.",
+    "features": [
+      "Posts",
+      "Chats",
+      "Notifications",
+      "Library",
+      "Profile"
+    ],
+    "cta": "Want an app like this? Talk to us"
+  },
+  "lessons": {
+    "kicker": "Free lessons",
+    "title": "26 free lessons on YouTube",
+    "text": "Start today: complete, ordered lessons on our channel.",
+    "items": {
+      "java": "Learn the Java language",
+      "web": "Web development with HTML & CSS"
+    },
+    "count": "lessons",
+    "watch": "Open the playlist"
+  },
+  "trailer": {
+    "kicker": "Nahdet Sham in a minute",
+    "title": "We teach · We build · We grow",
+    "play": "Play the video"
+  },
+  "founder": {
+    "kicker": "Founder",
+    "name": "Eng. Hamza Haj Esteifi",
+    "role": "Founder of Nahdet Sham and course trainer",
+    "bio": [
+      "Software engineer, graduated from Al-Sham International University in 2025.",
+      "He works in web development, industrial control systems and machine learning, and teaches the company's courses himself."
+    ],
+    "link": "His personal website",
+    "photoAlt": "Hamza Haj Esteifi"
+  },
+  "cta": {
+    "title": "Your future starts here",
+    "text": "Join a course, or tell us about your idea, and we will get back to you on WhatsApp."
+  },
+  "whatsapp": {
+    "course": "Hello Nahdet Sham, I would like to join a course.",
+    "project": "Hello Nahdet Sham, I have a project idea and would like to talk about it."
+  },
+  "footer": {
+    "tagline": "We teach · We build · We grow",
+    "contactTitle": "Get in touch",
+    "followTitle": "Follow us",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "rights": "All rights reserved"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube"
+  },
+  "pages": {
+    "courses": {
+      "kicker": "Courses",
+      "title": "Pick your path… from zero to pro",
+      "intro": "Five programming and AI courses, each with six modules and three real projects for your portfolio."
+    },
+    "course": {
+      "kicker": "Course",
+      "back": "All courses",
+      "others": "Other courses",
+      "code": "From the course code",
+      "level": "Level"
+    },
+    "services": {
+      "kicker": "Services",
+      "title": "We teach · We build · We design",
+      "intro": "Three ways to work with us: courses that teach you, products we build for you, and designs that introduce you.",
+      "request": "Request it",
+      "requestText": "Hello Nahdet Sham, I would like to request a service",
+      "teachLink": "See the courses",
+      "build": [
+        {
+          "title": "Websites",
+          "text": "A personal or company website, in two languages, working on every screen, like this one."
+        },
+        {
+          "title": "Mobile and web apps",
+          "text": "Apps that turn your idea into a product in people's hands, like SHAM UNITY."
+        },
+        {
+          "title": "AI solutions",
+          "text": "Solutions built on machine learning to analyse data and automate work."
+        }
+      ],
+      "design": [
+        {
+          "title": "Social media ads",
+          "text": "A post and a story for your course, product or offer, in your identity, with strong, clear points."
+        },
+        {
+          "title": "CVs",
+          "text": "We organise your CV and strengthen its wording in Arabic and English, without adding anything you did not do."
+        },
+        {
+          "title": "Posters and post series",
+          "text": "A series of posts that introduces you and your work on Instagram and LinkedIn."
+        },
+        {
+          "title": "Promo videos and trailers",
+          "text": "A trailer or short ad in landscape and vertical formats, with music and motion."
+        },
+        {
+          "title": "PDF course notes",
+          "text": "Clear, well-organised notes for a course or a set of sessions."
+        },
+        {
+          "title": "Account review and content plan",
+          "text": "We study your accounts and your field, and give you a clear content plan."
+        }
+      ],
+      "stepsTitle": "How we work",
+      "steps": [
+        {
+          "title": "Talk to us",
+          "text": "On WhatsApp or through the form: tell us what you need."
+        },
+        {
+          "title": "We understand",
+          "text": "We ask what we need to get it right the first time."
+        },
+        {
+          "title": "We work",
+          "text": "And come back with a draft for you to review and change."
+        },
+        {
+          "title": "We deliver",
+          "text": "Once you approve, you receive the finished work."
+        }
+      ]
+    },
+    "work": {
+      "kicker": "Our work",
+      "title": "Work that speaks for us",
+      "intro": "From a university app to the ads for our own courses: this is how we work.",
+      "adsKicker": "Design",
+      "adsTitle": "Our course ads",
+      "adsText": "Every course has a poster and a short promo film, in the Nahdet Sham identity."
+    },
+    "about": {
+      "kicker": "About",
+      "title": "From a team… to a company",
+      "intro": "A software and AI company from Syria. We started as a team and became a company: the same spirit, a bigger ambition.",
+      "teamTitle": "The team"
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Talk to us",
+      "intro": "Pick the way that suits you, and we will get back to you on WhatsApp.",
+      "whatsappTitle": "WhatsApp",
+      "whatsappText": "The quickest way to ask or request a service.",
+      "formTitle": "Registration form",
+      "formText": "To join a course: fill in the form and we will contact you.",
+      "formCta": "Open the form",
+      "emailTitle": "Email",
+      "followTitle": "Follow us",
+      "servicesTitle": "Request a service in one tap"
+    },
+    "notFound": {
+      "title": "This page does not exist",
+      "text": "The link may have changed or been mistyped.",
+      "home": "Back to the home page"
+    }
+  }
+}

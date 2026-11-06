@@ -1,0 +1,42 @@
+{
+  "site": { "url": "https://nahdetsham.github.io", "defaultLang": "ar", "year": 2026 },
+  "contact": {
+    "phone": "+963 993 391 788",
+    "whatsapp": "963993391788",
+    "email": "nahdatsham00@gmail.com",
+    "registerForm": "https://docs.google.com/forms/d/e/1FAIpQLSeoOMS1hTleI3O-nFS3h59yjgG53PGg0PQjEkpL8jB1kjwEtg/viewform"
+  },
+  "social": [
+    { "id": "instagram", "url": "https://www.instagram.com/nahdet_sham/", "handle": "@nahdet_sham" },
+    { "id": "facebook", "url": "https://www.facebook.com/profile.php?id=61574724204178", "handle": "Nahdet Sham" },
+    { "id": "youtube", "url": "https://www.youtube.com/@NahdetSham", "handle": "@NahdetSham" }
+  ],
+  "courses": [
+    {
+      "id": "python", "num": "01", "tags": ["OOP", "GUI", "SQL", "CRUD", "JSON"], "file": "app.py",
+      "code": "class Student:\n    def __init__(self, name, grade):\n        self.name = name\n        self.grade = grade\n\ntop = max(students, key=lambda s: s.grade)\nprint(f\"Top: {top.name}\")"
+    },
+    {
+      "id": "frontend", "num": "02", "tags": ["HTML5", "CSS3", "ES6+", "React", "Git"], "file": "app.js",
+      "code": "const res = await fetch(api + city);\nconst data = await res.json();\n\ncard.innerHTML = `\n  <h2>${data.city}</h2>\n  <p>${data.temp}°C</p>`;"
+    },
+    {
+      "id": "backend", "num": "03", "tags": ["Node.js", "Express", "REST", "JWT", "MongoDB"], "file": "orders.js",
+      "code": "router.post(\"/orders\", auth, async (req, res) => {\n  const order = await Order.create({\n    user: req.user.id,\n    items: req.body.items,\n  });\n  res.status(201).json(order);\n});"
+    },
+    {
+      "id": "ai", "num": "04", "tags": ["Pandas", "scikit-learn", "CNN", "PyTorch"], "file": "cnn.py",
+      "code": "model = Sequential([\n    Conv2D(32, 3, activation=\"relu\"),\n    MaxPooling2D(),\n    Flatten(),\n    Dense(10, activation=\"softmax\"),\n])\nmodel.fit(X_train, y_train, epochs=10)"
+    },
+    {
+      "id": "excel", "num": "05", "tags": ["XLOOKUP", "Pivot", "Power Query", "Power Pivot", "DAX"], "file": "Sales.pbix",
+      "code": "=XLOOKUP(A2, Ids, Prices)\n=COUNTIFS(Region, \"North\", Sales, \">1000\")\n\nTotal Sales = SUM(Sales[Amount])\nGrowth % = DIVIDE(\n    [Sales] - [LY], [LY])"
+    }
+  ],
+  "lessons": [
+    { "id": "java", "count": 15, "playlist": "https://www.youtube.com/playlist?list=PL0ua7Mv8UP_AK8QEeqppppHjP8Y35-qao", "first": "https://www.youtube.com/watch?v=VhKlzCOgtZk&list=PL0ua7Mv8UP_AK8QEeqppppHjP8Y35-qao" },
+    { "id": "web", "count": 11, "playlist": "https://www.youtube.com/playlist?list=PL0ua7Mv8UP_AXWdDtEi5lVPmnYsVkSQ46", "first": "https://www.youtube.com/watch?v=prpaqR0I4Zw&list=PL0ua7Mv8UP_AXWdDtEi5lVPmnYsVkSQ46" }
+  ],
+  "founder": { "site": "https://hamzahagistife.github.io" },
+  "team": []
+}
