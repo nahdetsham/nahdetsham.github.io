@@ -4,6 +4,7 @@ import { LANGS, getContent, isLang, wa } from "@/lib/content";
 import { pageMeta } from "@/lib/meta";
 import Shell from "@/components/Shell";
 import PageHero from "@/components/PageHero";
+import Soon from "@/components/Soon";
 import { Arrow, Mail, SocialIcon, Whatsapp } from "@/components/Icons";
 
 export function generateStaticParams() {
@@ -38,11 +39,19 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
             <span className="ct-s">{p.whatsappText}</span>
             <Arrow className="ic flip ct-go" />
           </a>
-          <a className="ct-card" href={c.links.register} target="_blank" rel="noopener" data-reveal>
-            <span className="ct-t">{p.formTitle}</span>
-            <span className="ct-s">{p.formText}</span>
-            <span className="ct-link">{p.formCta} <Arrow className="ic flip" /></span>
-          </a>
+          {c.links.register ? (
+            <a className="ct-card" href={c.links.register} target="_blank" rel="noopener" data-reveal>
+              <span className="ct-t">{p.formTitle}</span>
+              <span className="ct-s">{p.formText}</span>
+              <span className="ct-link">{p.formCta} <Arrow className="ic flip" /></span>
+            </a>
+          ) : (
+            <div className="ct-card" data-reveal>
+              <span className="ct-t">{p.formTitle}</span>
+              <Soon label={c.t.courses.labels.soon} small />
+              <span className="ct-s">{c.t.courses.soonNote}</span>
+            </div>
+          )}
           <a className="ct-card" href={c.links.email} data-reveal>
             <Mail className="ct-ic" />
             <span className="ct-t">{p.emailTitle}</span>
@@ -65,9 +74,9 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         <div className="wrap ct-services">
           <h2 className="cd-h" data-reveal>{p.servicesTitle}</h2>
           <ul data-reveal>
-            {[c.t.hero.ctaCourse, ...services].map((title, i) => (
+            {[...(c.links.register ? [c.t.hero.ctaCourse] : []), ...services].map((title) => (
               <li key={title}>
-                <a href={i === 0 ? c.links.whatsappCourse : wa(k.whatsapp, `${s.requestText}: ${title}`)} target="_blank" rel="noopener">
+                <a href={title === c.t.hero.ctaCourse ? c.links.whatsappCourse : wa(k.whatsapp, `${s.requestText}: ${title}`)} target="_blank" rel="noopener">
                   {title}
                 </a>
               </li>

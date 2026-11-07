@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 // Opening scene: the gold line-work draws the Damascene star and the calligraphic mark is traced then filled (GSAP),
 // while the copy rises in with plain CSS (no wait for JavaScript, so the text is on screen at once).
 // Scrolling away turns the star and lifts the copy.
@@ -60,10 +60,17 @@ export default function Hero({ c }: { c: Content }) {
           <p className="pillars" data-hr style={d(0.45)}>{t.pillars}</p>
           <p className="lead" data-hr style={d(0.55)}>{t.lead}</p>
           <div className="ctas" data-hr style={d(0.7)}>
-            <a className="btn btn-gold" href={c.links.register} target="_blank" rel="noopener">
-              {t.ctaCourse}
-              <Arrow className="ic flip" />
-            </a>
+            {c.links.register ? (
+              <a className="btn btn-gold" href={c.links.register} target="_blank" rel="noopener">
+                {t.ctaCourse}
+                <Arrow className="ic flip" />
+              </a>
+            ) : (
+              <a className="btn btn-gold" href={`/${c.lang}/courses/`}>
+                {t.ctaBrowse}
+                <Arrow className="ic flip" />
+              </a>
+            )}
             <a className="btn btn-line" href={c.links.whatsappProject} target="_blank" rel="noopener">
               <Whatsapp className="ic" />
               {t.ctaProject}

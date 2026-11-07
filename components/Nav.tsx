@@ -49,7 +49,9 @@ export default function Nav({ c }: { c: Content }) {
         </nav>
         <div className="nav-end">
           <a className="nav-lang" href={otherHref} lang={c.other} aria-label={t.langLabel}>{t.lang}</a>
-          <a className="btn btn-gold btn-sm nav-cta" href={c.links.register} target="_blank" rel="noopener">{c.t.hero.ctaCourse}</a>
+          {c.links.register ? (
+            <a className="btn btn-gold btn-sm nav-cta" href={c.links.register} target="_blank" rel="noopener">{c.t.hero.ctaCourse}</a>
+          ) : null}
           <button className="nav-burger" type="button" aria-expanded={open} aria-label={open ? t.close : t.menu} onClick={() => setOpen(!open)}>
             {open ? <Close /> : <Burger />}
           </button>

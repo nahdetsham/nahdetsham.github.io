@@ -20,6 +20,8 @@ const Shared = z.object({
     whatsapp: z.string().regex(/^\d+$/, "whatsapp: digits only, with country code"),
     email: z.string().email(),
     registerForm: z.union([z.string().url(), z.literal("")]),
+    // false = enrolment closed for now: the register buttons turn into an "opens soon" badge
+    registerOpen: z.boolean(),
   }),
   social: z.array(z.object({ id: SocialId, url: z.string().url(), handle: z.string() })),
   courses: z.array(
@@ -45,7 +47,7 @@ const Text = z.object({
   }),
   hero: z.object({
     kicker: z.string(), title1: z.string(), title2: z.string(), titleGold: z.string(), pillars: z.string(),
-    lead: z.string(), ctaCourse: z.string(), ctaProject: z.string(), scroll: z.string(),
+    lead: z.string(), ctaCourse: z.string(), ctaBrowse: z.string(), ctaProject: z.string(), scroll: z.string(),
   }),
   story: z.object({ kicker: z.string(), lines: z.array(z.string()).length(3), sub: z.string(), code: z.string(), file: z.string() }),
   pillars: z.object({
@@ -53,9 +55,9 @@ const Text = z.object({
     items: z.array(z.object({ id: z.enum(["teach", "build", "design"]), title: z.string(), text: z.string(), points: z.array(z.string()) })).length(3),
   }),
   courses: z.object({
-    kicker: z.string(), title: z.string(), intro: z.string(),
+    kicker: z.string(), title: z.string(), intro: z.string(), soonNote: z.string(),
     labels: z.object({
-      modules: z.string(), projects: z.string(), prereq: z.string(), outcome: z.string(), register: z.string(), ask: z.string(),
+      modules: z.string(), projects: z.string(), prereq: z.string(), outcome: z.string(), register: z.string(), soon: z.string(), ask: z.string(),
       askText: z.string(), film: z.string(), trainer: z.string(), trainerName: z.string(), details: z.string(),
     }),
     items: z.record(CourseText),
@@ -66,7 +68,7 @@ const Text = z.object({
   }),
   trailer: z.object({ kicker: z.string(), title: z.string(), play: z.string() }),
   founder: z.object({ kicker: z.string(), name: z.string(), role: z.string(), bio: z.array(z.string()), link: z.string(), photoAlt: z.string() }),
-  cta: z.object({ title: z.string(), text: z.string() }),
+  cta: z.object({ title: z.string(), text: z.string(), textSoon: z.string() }),
   whatsapp: z.object({ course: z.string(), project: z.string() }),
   footer: z.object({
     tagline: z.string(), contactTitle: z.string(), followTitle: z.string(), whatsapp: z.string(), email: z.string(), rights: z.string(),
@@ -134,8 +136,8 @@ export function getContent(lang: Lang) {
     links: {
       whatsappCourse: wa(c.whatsapp, t.whatsapp.course),
       whatsappProject: wa(c.whatsapp, t.whatsapp.project),
-      // until the public form link is in shared.json, "join a course" opens WhatsApp
-      register: c.registerForm || wa(c.whatsapp, t.whatsapp.course),
+      // null while enrolment is closed (shared.json contact.registerOpen); without a form link it opens WhatsApp
+      register: c.registerOpen ? c.registerForm || wa(c.whatsapp, t.whatsapp.course) : null,
       email: `mailto:${c.email}`,
     },
     social: shared.social.map((s) => ({ ...s, label: t.social[s.id] })),

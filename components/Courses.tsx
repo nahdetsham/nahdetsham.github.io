@@ -1,9 +1,10 @@
-﻿"use client";
+"use client";
 // Courses: five rows. On wide screens a phone beside the list plays the film of the row in the middle of the
 // screen (or the one under the pointer); on phones each row carries its own film, playing while it is in view.
 import { useEffect, useRef, useState } from "react";
 import type { Content } from "@/lib/content";
 import SectionHead from "./SectionHead";
+import Soon from "./Soon";
 import { Arrow, Whatsapp } from "./Icons";
 
 function useReducedMotion() {
@@ -105,10 +106,14 @@ export default function Courses({ c, head = true }: { c: Content; head?: boolean
                     ))}
                   </ul>
                   <div className="cs-actions">
-                    <a className="btn btn-gold btn-sm" href={c.links.register} target="_blank" rel="noopener">
-                      {t.labels.register}
-                      <Arrow className="ic flip" />
-                    </a>
+                    {c.links.register ? (
+                      <a className="btn btn-gold btn-sm" href={c.links.register} target="_blank" rel="noopener">
+                        {t.labels.register}
+                        <Arrow className="ic flip" />
+                      </a>
+                    ) : (
+                      <Soon label={t.labels.soon} small />
+                    )}
                     <a className="btn btn-line btn-sm" href={k.ask} target="_blank" rel="noopener">
                       <Whatsapp className="ic" />
                       {t.labels.ask}
@@ -145,6 +150,12 @@ export default function Courses({ c, head = true }: { c: Content; head?: boolean
             </p>
           </div>
         </div>
+        {c.links.register ? null : (
+          <div className="cs-soon" data-reveal>
+            <Soon label={t.labels.soon} />
+            <p>{t.soonNote}</p>
+          </div>
+        )}
       </div>
     </section>
   );

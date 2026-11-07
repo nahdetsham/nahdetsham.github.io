@@ -8,6 +8,7 @@ import PageHero from "@/components/PageHero";
 import Film from "@/components/Film";
 import CodeWin from "@/components/CodeWin";
 import Cta from "@/components/Cta";
+import Soon from "@/components/Soon";
 import { Arrow, Whatsapp } from "@/components/Icons";
 
 export function generateStaticParams() {
@@ -45,10 +46,14 @@ export default async function CoursePage({ params }: { params: Promise<{ lang: s
           <div><dt>{L.trainer}</dt><dd>{L.trainerName}</dd></div>
         </dl>
         <div className="ctas">
-          <a className="btn btn-gold" href={c.links.register} target="_blank" rel="noopener">
-            {L.register}
-            <Arrow className="ic flip" />
-          </a>
+          {c.links.register ? (
+            <a className="btn btn-gold" href={c.links.register} target="_blank" rel="noopener">
+              {L.register}
+              <Arrow className="ic flip" />
+            </a>
+          ) : (
+            <Soon label={L.soon} />
+          )}
           <a className="btn btn-line" href={k.ask} target="_blank" rel="noopener">
             <Whatsapp className="ic" />
             {L.ask}

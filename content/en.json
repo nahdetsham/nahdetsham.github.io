@@ -25,6 +25,7 @@
     "pillars": "Software · AI · Training",
     "lead": "Programming and AI courses from zero to pro, built on real projects, and websites, apps and smart solutions built for you.",
     "ctaCourse": "Join a course",
+    "ctaBrowse": "See the courses",
     "ctaProject": "Tell us about your project",
     "scroll": "Discover our story"
   },
@@ -85,12 +86,14 @@
     "kicker": "Courses",
     "title": "From zero… to pro",
     "intro": "Five courses. Each one starts from the basics and ends with real projects. Pick your path.",
+    "soonNote": "Enrolment opens soon. Follow us to hear first, or ask us about any course on WhatsApp.",
     "labels": {
       "modules": "What you learn",
       "projects": "Real projects",
       "prereq": "Prerequisites",
       "outcome": "By the end",
       "register": "Join the course",
+      "soon": "Enrolment opens soon",
       "ask": "Ask on WhatsApp",
       "askText": "Hello Nahdet Sham, I have a question about a course",
       "film": "Course film",
@@ -248,7 +251,8 @@
   },
   "cta": {
     "title": "Your future starts here",
-    "text": "Join a course, or tell us about your idea, and we will get back to you on WhatsApp."
+    "text": "Join a course, or tell us about your idea, and we will get back to you on WhatsApp.",
+    "textSoon": "Course enrolment opens soon. Meanwhile, tell us about your idea and we will get back to you on WhatsApp."
   },
   "whatsapp": {
     "course": "Hello Nahdet Sham, I would like to join a course.",
